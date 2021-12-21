@@ -8,16 +8,8 @@ export default function Home() {
       <Head>
         <title>Next Steps</title>
         <link rel="icon" href="/favicon.ico" />
-        <style>
-  body {
-    font-family: sans-serif;
-  }
-  label {
-    display: block;
-    margin-bottom: .2em;
-  }
-</style>
-      </Head>
+        <link rel="stylesheet" type="text/css" href="styles.css"></link>
+      </Head> 
 
       <main>
         <Header title="Hello Dr !!! Welcome to Next Steps" />
