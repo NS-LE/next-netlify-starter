@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Next Steps</title>
         <link rel="icon" href="/favicon.ico" />
         <style>
   body {
@@ -49,7 +49,6 @@ export default function Home() {
         </p>
       </main>
 
-      <Footer />
     </div>
   )
 }
