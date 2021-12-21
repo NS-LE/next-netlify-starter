@@ -8,10 +8,19 @@ export default function Home() {
       <Head>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
+        <style>
+  body {
+    font-family: sans-serif;
+  }
+  label {
+    display: block;
+    margin-bottom: .2em;
+  }
+</style>
       </Head>
 
       <main>
-        <Header title="Hello" />
+        <Header title="Hello Dr !!! Welcome to Next Steps" />
         <p className="description">
         <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
@@ -22,13 +31,16 @@ export default function Home() {
     <label>Your Email: <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
+    <label>Your Phone: <input type="phone" name="phone" /></label>
+  </p>
+  <p>
+    <label>Your Interests: <select name="role[]" multiple>
+      <option value="radiology">Radiology</option>
+      <option value="genmed">General Medicine</option>
     </select></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>Brief Message: <textarea name="message"></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
