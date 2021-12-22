@@ -2,31 +2,6 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-const fetch = require('node-fetch')
-
-const API_ENDPOINT = 'https://cdn.contentful.com/spaces/bhxah9dfjc2u/environments/master/entries/6pX6vujnVHCaEONrSqflyU?access_token=AU0qFdeBTy0M9AU9RmdITFoiNGDbu5p_2mlziax7kPI'
-
-exports.handler = async (event, context) => {
-  let response
-  try {
-    response = await fetch(API_ENDPOINT)
-    // handle response
-  } catch (err) {
-    return {
-      statusCode: err.statusCode || 500,
-      body: JSON.stringify({
-        error: err.message
-      })
-    }
-  }
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      data: response
-    })
-  }
-}
 
 export default function Home() {
   return (
@@ -69,4 +44,30 @@ export default function Home() {
 
     </div>
   )
+}
+
+const fetch = require('node-fetch')
+
+const API_ENDPOINT = 'https://cdn.contentful.com/spaces/bhxah9dfjc2u/environments/master/entries/6pX6vujnVHCaEONrSqflyU?access_token=AU0qFdeBTy0M9AU9RmdITFoiNGDbu5p_2mlziax7kPI'
+
+exports.handler = async (event, context) => {
+  let response
+  try {
+    response = await fetch(API_ENDPOINT)
+    // handle response
+  } catch (err) {
+    return {
+      statusCode: err.statusCode || 500,
+      body: JSON.stringify({
+        error: err.message
+      })
+    }
+  }
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      data: response
+    })
+  }
 }
