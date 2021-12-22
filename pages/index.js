@@ -4,7 +4,7 @@ import Footer from '@components/Footer'
 
 const fetch = require('node-fetch')
 
-const API_ENDPOINT = 'https://api.contentful.com/spaces/bhxah9dfjc2u/environments/master/entries/6pX6vujnVHCaEONrSqflyU?access_token=CFPAT-On1cwLZn2kUACkRW0BwL9om4GQAaPsoQcClUjIgkqDU'
+const API_ENDPOINT = 'https://cdn.contentful.com/spaces/bhxah9dfjc2u/environments/master/entries/6pX6vujnVHCaEONrSqflyU?access_token=AU0qFdeBTy0M9AU9RmdITFoiNGDbu5p_2mlziax7kPI'
 
 exports.handler = async (event, context) => {
   let response
